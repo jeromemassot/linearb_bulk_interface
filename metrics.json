@@ -1,0 +1,118 @@
+[
+    {
+        "name": "branch.computed.cycle_time",
+        "value": ["p75", "p50", "avg"],
+	    "description": "Full cycle time (Coding time + Pickup time + Review time + Time to production)",
+        "unit": "min"
+    },
+    {
+        "name": "branch.time_to_pr",
+        "value": ["p75", "p50", "avg"],
+	    "description": "Coding time (Time to PR)",
+        "unit": "min"
+    },
+    {
+        "name": "branch.time_to_review",
+        "value": ["p75", "p50", "avg"],
+	    "description": "Pickup time (Time to review)",
+        "unit": "min"
+    },
+    {
+        "name": "branch.review_time",
+        "value": ["p75", "p50", "avg"],
+	    "description": "Review time",
+        "unit": "min"
+    },
+    {
+        "name": "branch.time_to_prod",
+        "value": ["p75", "p50", "avg"],
+	    "description": "Time to production (Time to deploy)",
+        "unit": "min"
+    },
+    {
+        "name": "pr.merged.size",
+        "value": ["p75", "p50", "avg"],
+	    "description": "The sum of PR sizes of merged PRs",
+        "unit": "lines of code"
+    },
+    {
+        "name": "pr.merged",
+	    "description": "The number of PRs that got merged",
+        "unit": "count"
+    },
+    {
+        "name": "pr.review_depth",
+	    "description": "The sum of comments divided by the sum of PRs",
+        "unit": "lines of comments"
+    },
+    {
+        "name": "commit.activity.new_work.count",
+	    "description": "The total new lines of code",
+        "unit": "count"
+    },
+    {
+        "name": "commit.total_changes",
+	    "description": "The total lines of code that have been replaced",
+        "unit": "lines of code"
+    },
+    {
+        "name": "commit.activity.refactor.count",
+	    "description": "The total lines of code that have been replaced that are older then 25 days",
+        "unit": "lines of code"
+    },
+    {
+        "name": "commit.activity.rework.count",
+	    "description": "The total lines of code that have replaced code written within the last 25 days, but outside this branch",
+        "unit": "lines of code"
+    },
+    {
+        "name": "pr.merged.without.review.count",
+	    "description": "The number of PRs that got merged without review",
+        "unit": "count"
+    },
+    {
+        "name": "commit.total.count",
+	    "description": "The sum of commits",
+        "unit": "count"
+    },
+    {
+        "name": "pr.new",
+	    "description": "The number of opened PRs",
+        "unit": "count"
+    },
+    {
+        "name": "pr.reviews",
+	    "description": "The number of reviews on all PRs",
+        "unit": "count"
+    },
+    {
+        "name": "releases.count",
+        "description": "The number of releases",
+        "unit": "count"
+    },
+    {
+        "name": "commit.activity_days",
+        "description": "The amount of day of developer activity (commit/comment/PR/merge/review)",
+        "unit": "days"
+    }, 
+    {
+        "name": "branch.state.computed.done",
+        "description": "Number of branches that reached state done",
+        "unit": "count"
+    },   
+    {
+        "name": "branch.state.active",
+        "description": "Number of active branches",
+        "unit": "count"
+    },  
+    {
+        "name": "pm.mttr",
+        "description": "Mean time to repair",
+        "unit": "min"
+    },  
+    {
+        "name": "pm.cfr.issues.done",
+        "description": "The sum of issues that are considered as incidents that reached a done state",
+        "unit": "count"
+    }
+]
